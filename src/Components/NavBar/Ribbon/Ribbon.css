@@ -1,0 +1,82 @@
+.ribbon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 1rem 0 1rem;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin: 0;
+  top: 0;
+  z-index: 9000;
+  position: fixed;
+  width: 100vw;
+}
+
+.ribbon > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.ribbon > ul li {
+  list-style-type: none;
+  color: #3f3f3f;
+  font-size: 0.65rem;
+  cursor: pointer;
+  line-height: 1rem;
+  padding: 8px;
+  height: 32px;
+  border: 1px solid #f3f3f3;
+  border-bottom: none;
+  border-radius: 1px;
+  transition: 100ms ease-in-out;
+}
+
+.ribbon > ul li:hover {
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+}
+
+.ribbon div {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.ribbon div span {
+  cursor: pointer;
+}
+
+#ribbonSettings {
+  position: relative;
+}
+
+#ribbonSettingsDropdown {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 150px;
+  z-index: 5000;
+  padding: 0;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+
+#ribbonSettingsDropdown li:hover {
+  background-color: #e6f2fb;
+}
+
+.ribbonSelected {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+}
+
+#ribbonModalOff {
+  position: absolute;
+  width: 125vw;
+  height: 125vh;
+  z-index: 100;
+  right: -50px;
+  top: -10px;
+}

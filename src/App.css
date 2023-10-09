@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --bg-color-blue: #005d85;
+  --primary-color: #0082b9;
+  --secondary-color: #dd7711;
+}
+
+body {
+  padding-top: 2.36rem;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+}
