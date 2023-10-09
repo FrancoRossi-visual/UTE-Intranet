@@ -1,20 +1,16 @@
+import { useState } from "react";
+import "./App.css";
+import NavBar from "./Components/NavBar/NavBar";
 
-import './App.css'
-
-import NavBar from './Components/NavBar/NavBar'
-
-const usuario =  'Rossi Vazquez, Franco';
+const usuario = "Rossi Vazquez, Franco";
 
 function App() {
-
-
+  const [currentSite, setCurrentSite] = useState("Desarrollo de cursos");
   return (
     <>
-  <NavBar />
+      <NavBar usuario={usuario} currentSite={currentSite} />
     </>
-  )
+  );
 }
 
-
-
-export default App
+export default App;

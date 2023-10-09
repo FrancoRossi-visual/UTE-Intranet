@@ -1,17 +1,23 @@
+import { useState } from "react";
 import Ribbon from "./Ribbon/Ribbon";
+import NavegarComp from "./Ribbon/NavegarComp";
 import "./NavBar.css";
 
-export default function NavBar() {
+export default function NavBar({ usuario, currentSite }) {
+  const [ribbonTab, setRibbonTab] = useState("NAVEGAR");
   return (
     <>
-      <Ribbon />
-      <Navigation />
+      <Ribbon setRibbonTab={setRibbonTab} ribbonTab={ribbonTab}>
+        {ribbonTab === "NAVEGAR" && (
+          <NavegarComp currentSite={currentSite} usuario={usuario} />
+        )}
+        <span>{ribbonTab}</span> <br />
+        <span>{usuario}</span>
+      </Ribbon>
       <LocalNavigation />
     </>
   );
 }
-
-function Navigation() {}
 
 function LocalNavigation() {}
 

@@ -29,8 +29,7 @@ const questionIcon = (
   </svg>
 );
 
-export default function Ribbon() {
-  const [ribbonTab, setRibbonTab] = useState("NAVEGAR");
+export default function Ribbon({ children, ribbonTab, setRibbonTab }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -69,8 +68,7 @@ export default function Ribbon() {
           <li>{questionIcon}</li>
         </ul>
       </div>
-
-      <DropdownRibbon tab={ribbonTab} />
+      {children}
     </>
   );
 }
@@ -93,8 +91,4 @@ function RibbonSettingsDropdown({ onClose }) {
       <div id="ribbonModalOff" onClick={onClose}></div>
     </>
   );
-}
-
-function DropdownRibbon({ tab }) {
-  return <span>{tab}</span>;
 }
