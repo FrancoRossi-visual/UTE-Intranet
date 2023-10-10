@@ -1,4 +1,5 @@
 import { useState } from "react";
+import RibbonSettingsDropdown from "./RibbonSettingsDropdown";
 import "./Ribbon.css";
 
 const gearIcon = (
@@ -62,33 +63,29 @@ export default function Ribbon({ children, ribbonTab, setRibbonTab }) {
 
         <ul>
           <li id="ribbonSettings" className={isOpen ? "ribbonSelected" : null}>
-            <span onClick={handleToggle}> {gearIcon}</span>
-            {isOpen && <RibbonSettingsDropdown onClose={handleToggle} />}
+            <span onClick={handleToggle}>{gearIcon}</span>
+            {isOpen && (
+              <RibbonSettingsDropdown
+                onClose={handleToggle}
+                id={"ribbonSettingsDropdown"}
+              >
+                <li>Ocultar cinta</li>
+                <li>Compartido con...</li>
+                <hr />
+                <li>Editar página</li>
+                <li>Agregar una página</li>
+                <li>Agregar una aplicación</li>
+                <li>Contenidos del sito</li>
+                <hr />
+                <li>Administrador del sitio</li>
+                <li>Configuración del sitio</li>
+              </RibbonSettingsDropdown>
+            )}
           </li>
           <li>{questionIcon}</li>
         </ul>
       </div>
       {children}
-    </>
-  );
-}
-
-function RibbonSettingsDropdown({ onClose }) {
-  return (
-    <>
-      <ul id="ribbonSettingsDropdown">
-        <li>Ocultar cinta</li>
-        <li>Compartido con...</li>
-        <hr />
-        <li>Editar página</li>
-        <li>Agregar una página</li>
-        <li>Agregar una aplicación</li>
-        <li>Contenidos del sito</li>
-        <hr />
-        <li>Administrador del sitio</li>
-        <li>Configuración del sitio</li>
-      </ul>
-      <div id="ribbonModalOff" onClick={onClose}></div>
     </>
   );
 }

@@ -11,8 +11,7 @@ export default function NavBar({ usuario, currentSite }) {
         {ribbonTab === "NAVEGAR" && (
           <NavegarComp currentSite={currentSite} usuario={usuario} />
         )}
-        <span>{ribbonTab}</span> <br />
-        <span>{usuario}</span>
+        <span>{ribbonTab}</span>
       </Ribbon>
       <LocalNavigation />
     </>
