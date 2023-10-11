@@ -1,3 +1,5 @@
+/* NAVEGAR */
+
 .lowerNavBar {
   height: 4rem;
   display: flex;
@@ -39,7 +41,7 @@
   & li {
     cursor: pointer;
 
-    & img {
+    & > img {
       width: 1.25rem;
     }
 
@@ -50,7 +52,7 @@
 
     &:nth-child(4) {
       position: relative;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       & span {
         margin-left: 1rem;
         color: var(--primary-color);
@@ -90,4 +92,10 @@
   & li:hover {
     background-color: #e6f2fb;
   }
+}
+
+/* PÁGINA */
+
+.pagina-options {
+  list-style-type: none;
 }

@@ -1,16 +1,18 @@
-import { useState } from "react";
-import Ribbon from "./Ribbon/Ribbon";
-import NavegarComp from "./Ribbon/NavegarComp";
-import "./NavBar.css";
+import { useState } from 'react';
+import Ribbon from './Ribbon/Ribbon';
+import NavegarComp from './Ribbon/NavegarComp';
+import PaginaComp from './Ribbon/PaginaComp';
+import './NavBar.css';
 
 export default function NavBar({ usuario, currentSite }) {
-  const [ribbonTab, setRibbonTab] = useState("NAVEGAR");
+  const [ribbonTab, setRibbonTab] = useState('NAVEGAR');
   return (
     <>
       <Ribbon setRibbonTab={setRibbonTab} ribbonTab={ribbonTab}>
-        {ribbonTab === "NAVEGAR" && (
+        {ribbonTab === 'NAVEGAR' && (
           <NavegarComp currentSite={currentSite} usuario={usuario} />
         )}
+        {ribbonTab === 'PAGINA' && <PaginaComp />}
         <span>{ribbonTab}</span>
       </Ribbon>
       <LocalNavigation />
