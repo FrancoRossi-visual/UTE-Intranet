@@ -1,0 +1,156 @@
+/* NAVEGAR */
+
+.lowerNavBar {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 2rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.lowerNavBar div {
+  display: flex;
+  gap: 2rem;
+  place-items: center;
+}
+
+.lowerNavBar .logo {
+  height: 2.25rem;
+}
+
+.lowerNavBar h1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--primary-color);
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.lowerNavBar ul {
+  margin: 0;
+  list-style-type: none;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & li {
+    cursor: pointer;
+
+    & > img {
+      width: 1.25rem;
+    }
+
+    &:nth-child(3) {
+      transform: scale(130%);
+      margin-left: 5px;
+    }
+
+    &:nth-child(4) {
+      position: relative;
+      font-size: 0.9rem;
+      & span {
+        margin-left: 1rem;
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        height: 4rem;
+        border-right: 1px solid hsla(0, 0%, 88%, 0);
+        padding-right: 10px;
+      }
+      &:hover {
+        border-right: 1px solid #e0e0e0;
+      }
+    }
+  }
+}
+
+#lowerNavBarDropdown {
+  position: absolute;
+  display: grid;
+  top: 3.5rem;
+  right: 0;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  z-index: 10000;
+  padding: 0;
+  gap: 0;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+  border-right: 1px solid #e0e0e0;
+  background-color: white;
+
+  & li {
+    padding: 0.75rem 1rem;
+  }
+
+  & li:hover {
+    background-color: #e6f2fb;
+  }
+}
+
+/* @PÁGINA */
+
+.pagina {
+  display: flex;
+  padding-inline: 1rem;
+  font-size: 0.75rem;
+  font-weight: 200;
+  background-color: var(--bg-grey);
+}
+
+.pagina-section {
+  border-right: solid 1px var(--grey);
+  display: grid;
+  justify-content: space-between;
+
+  & > ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+
+    & > li {
+      display: flex;
+      padding: 2px;
+      flex-direction: column;
+      align-items: center;
+      max-width: 7rem;
+      text-align: center;
+      height: 71px;
+
+      &:hover {
+        outline: 1px solid var(--hover-blue-outline);
+        cursor: pointer;
+      }
+    }
+  }
+
+  & > span {
+    text-align: center;
+    padding-bottom: 5px;
+    opacity: 75%;
+  }
+}
+
+.nested-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  width: auto;
+  height: 71px;
+
+  & li {
+    display: flex;
+    gap: 0.5rem;
+  }
+}

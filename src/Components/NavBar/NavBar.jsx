@@ -1,25 +1,23 @@
-import { useState } from 'react';
-import Ribbon from './Ribbon/Ribbon';
-import NavegarComp from './Ribbon/NavegarComp';
-import PaginaComp from './Ribbon/PaginaComp';
-import './NavBar.css';
+import { useState } from "react";
+import Ribbon from "./navComps/Ribbon";
+import NavegarComp from "./navComps/NavegarComp";
+import PaginaComp from "./navComps/PaginaComp";
+import PublicarComp from "./navComps/PublicarComp";
+import SiteNavigation from "./navComps/SiteNavigation";
+import "./NavBar.css";
 
 export default function NavBar({ usuario, currentSite }) {
-  const [ribbonTab, setRibbonTab] = useState('NAVEGAR');
+  const [ribbonTab, setRibbonTab] = useState("NAVEGAR");
   return (
     <>
       <Ribbon setRibbonTab={setRibbonTab} ribbonTab={ribbonTab}>
-        {ribbonTab === 'NAVEGAR' && (
+        {ribbonTab === "NAVEGAR" && (
           <NavegarComp currentSite={currentSite} usuario={usuario} />
         )}
-        {ribbonTab === 'PAGINA' && <PaginaComp />}
-        <span>{ribbonTab}</span>
+        {ribbonTab === "PAGINA" && <PaginaComp />}
+        {ribbonTab === "PUBLICAR" && <PublicarComp />}
       </Ribbon>
-      <LocalNavigation />
+      <SiteNavigation />
     </>
   );
 }
-
-function LocalNavigation() {}
-
-// todo: install font awesme and replace icons

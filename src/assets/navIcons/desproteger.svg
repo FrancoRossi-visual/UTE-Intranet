@@ -1,0 +1,7 @@
+<svg width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 5V32H29V12H22V5H9Z" fill="white" stroke="#84847B"/>
+<path d="M22 12V5L29 12H22Z" fill="white" stroke="#84847B" stroke-linejoin="bevel"/>
+<rect x="20.5" y="18.5" width="16" height="16" fill="#6BA594" stroke="#F3F3F3"/>
+<path d="M24 22L32 29.5" stroke="white" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M24 30H32V22" stroke="white" stroke-width="2"/>
+</svg>

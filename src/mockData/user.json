@@ -1,0 +1,14 @@
+{
+    "user": {
+        "name": "Franco",
+        "lastName": "Rossi Vázquez",
+        "email": "Frossi@ute.com.uy",
+        "uniqueCode": "E196380",
+        "groups": {
+            "Formación": "Admin",
+            "DesarrolloDeCursos": "Admin",
+            "FormaciónDueños": "read",
+            "recursosHumanos": "edit"
+        }
+    }
+}

@@ -6,20 +6,35 @@
 }
 
 :root {
-  --bg-color-blue: #005d85;
+  --bg-color-blue: rgb(0, 93, 133);
+  --bg-color-blue-trans: 0, 93, 133;
   --primary-color: #0082b9;
   --secondary-color: #dd7711;
+  --grey: #e2e2e2;
+  --bg-grey: #f3f3f3;
+  --hover-blue: #e6f2fb;
+  --hover-orange: #fbba6f;
+  --hover-blue-outline: #0081b9a2;
 }
 
 body {
   padding-top: 2.36rem;
   font-size: 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
+  overflow: hidden;
 }
 
 /* generales */
 
 .icn-small {
-  height: 0.4rem;
+  height: 0.25rem;
+}
+
+/* layout */
+
+#main {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  overflow-y: scroll;
 }
