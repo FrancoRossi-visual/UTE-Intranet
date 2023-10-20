@@ -5,10 +5,23 @@
         "email": "Frossi@ute.com.uy",
         "uniqueCode": "E196380",
         "groups": {
-            "Formación": "Admin",
-            "DesarrolloDeCursos": "Admin",
-            "FormaciónDueños": "read",
-            "recursosHumanos": "edit"
+            "Formación": {
+                "role": "owner",
+                "level": "0"
+                },
+            "DesarrolloDeCursos": {
+                "role": "owner",
+                "level": "0"
+                },
+            "FormaciónDueños": {
+                "role": "colab",
+                "level": "4"
+                },
+            "recursosHumanos": {
+                "role": "colab",
+                "level": "4"
+                }
         }
     }
 }
+

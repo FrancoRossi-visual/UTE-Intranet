@@ -69,12 +69,12 @@
 
 #menu-seleccion-y-promocion {
   left: 210px;
-  top: calc(41px * 2);
+  top: calc(33px * 2);
 }
 
 #menu-relaciones-internas {
   left: 210px;
-  top: calc(41px * 3);
+  top: calc(33px * 3);
 }
 
 /* side nav bar */
@@ -119,4 +119,55 @@
 .current-page {
   background-color: var(--bg-color-blue) !important;
   font-weight: 700;
+}
+
+/* Breadcrumb and searchbar */
+
+/* breadcrumb */
+
+.bread-crumb {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+
+  & li span {
+    margin-left: 0.4rem;
+  }
+
+  & a:visited {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Search-Bar */
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 1fr 2rem 2rem;
+  height: 2rem;
+
+  & button {
+    height: 2rem;
+  }
+
+  & img {
+    aspect-ratio: 1/1;
+  }
+}
+
+#icn-drop {
+  & img {
+    width: 0.75rem;
+  }
+}
+
+#icn-src {
+  & {
+    width: 1.5rem;
+  }
 }

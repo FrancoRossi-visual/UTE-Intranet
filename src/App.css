@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
 :root {
   --bg-color-blue: rgb(0, 93, 133);
   --bg-color-blue-trans: 0, 93, 133;
@@ -35,6 +40,15 @@ body {
 
 #main {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 165px 1fr;
+  gap: 1rem;
   overflow-y: scroll;
+}
+
+#breadcrumb-search {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
 }

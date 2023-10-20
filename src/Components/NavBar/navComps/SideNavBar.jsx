@@ -1,6 +1,6 @@
 import "../NavBar.css";
 
-export default function SideNavBar({ usuario, currentSite }) {
+export default function SideNavBar({ currentSite }) {
   return (
     <div className="side-nav-bar">
       <ul className="side-nav-bar-options">

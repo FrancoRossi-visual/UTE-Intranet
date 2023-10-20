@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../NavBar.css";
 
-export default function LocalNavigation() {
+export default function SiteNavigation() {
   const [desarrolloIsOpen, setDesarrolloIsOpen] = useState(false);
   const [desarrolloOpenSubTab, setDesarrolloOpenSubTab] = useState("none");
 

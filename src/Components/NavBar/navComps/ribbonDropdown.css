@@ -53,6 +53,8 @@
     &:nth-child(4) {
       position: relative;
       font-size: 0.9rem;
+      border-right: 1px solid white;
+
       & span {
         margin-left: 1rem;
         color: var(--primary-color);
@@ -60,9 +62,9 @@
         align-items: center;
         gap: 1rem;
         height: 4rem;
-        border-right: 1px solid hsla(0, 0%, 88%, 0);
         padding-right: 10px;
       }
+
       &:hover {
         border-right: 1px solid #e0e0e0;
       }
