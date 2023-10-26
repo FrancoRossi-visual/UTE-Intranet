@@ -38,6 +38,12 @@ body {
 
 /* layout */
 
+#page-content {
+  display: grid;
+  grid-template-columns: 1fr 255px;
+  gap: 2rem;
+}
+
 #main {
   display: grid;
   grid-template-columns: 165px 1fr;
@@ -45,10 +51,205 @@ body {
   overflow-y: scroll;
 }
 
-#breadcrumb-search {
-  height: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 2rem;
+#page {
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
+
+/* inside page - regular */
+
+
+.body-container {
+  margin-top: -25px;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  flex: auto;
+/* background-color: lightblue; */
+}
+
+#admin-bar {
+  margin-right: 50px;
+/*  background-color: lightgreen; */
+}
+
+
+.seccion {
+/*  background: #2eed071e; */
+width: 95%;
+margin-inline: auto;
+margin-bottom: 25px;
+}
+
+
+/*  ---------------------------------------------  Estilo general  ---------------------------------------------  */
+
+hr {
+border-top: 2.5px solid #005d85;
+}
+
+
+/*  ---------------------------------------------  Estilo de página  ---------------------------------------------  */
+
+
+/* Utility */
+
+.hidden {
+display: none;
+}
+
+/* Title */
+
+#pageMain {
+  & h1 {
+    background-color: var(--bg-color-blue);
+    color: white;
+    padding: 30px 40px;
+    font-size: 3rem;
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+    font-family: inherit;
+    }
+}
+
+
+.seccion h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-family: arial;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.side h2 {
+font-size: 1.5rem;
+color: var(--primary-color);
+margin: 0 0 -.5rem 0;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-tit {
+cursor: pointer;
+}
+
+.sub-tit h2 span {
+display: inline-block;
+width: 1.5rem;
+text-align: center;
+} 
+
+.sub-tit h2 {
+display: flex;
+flex-direction: row;
+gap: 10px
+font-size: 1.4rem;
+color: var(--primary-color);
+margin: 0 0 10px 0;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* btn */
+
+.btn-wrapper {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0 auto;
+margin-bottom: 1rem;
+padding: 0px 2rem;
+}
+
+.btn,
+.btn-nrnj {
+font-size: .85rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-style: solid;
+border-radius: 5px;
+border-width: 3px;
+border-color: var(--primary-color);
+background-color: var(--primary-color);
+padding: 7px 16px;
+transition: 400ms;
+cursor: pointer;
+color: white;
+font-weight: bold;
+}
+
+.btn:hover,
+.btn-nrnj:hover {
+transform: scale(1.1);
+background-color: white;
+}
+
+.btn:hover {
+color: var(--primary-color);
+}
+
+.btn-nrnj:hover {
+color: var(--secondary-color);
+}
+
+.btn-nrnj {
+background-color: var(--secondary-color);
+border-color: var(--secondary-color);
+padding: 10px 20px;
+font-size: 1rem;
+}
+
+.desactivado {
+display: flex;
+justify-content: center;
+align-items: center;
+border-style: solid;
+border-radius: 5px;
+border-width: 3px;
+padding: 10px 20px;
+transition: 400ms;
+color: white;
+font-weight: bold;
+background: grey;
+border: grey;
+cursor: default;
+pointer-events: none;
+}
+
+
+/* Bloque */
+
+.bloque {
+/* background-color: #11dd775b; */
+margin-bottom: 20px;
+}
+
+#asignados .bloque {
+margin-top: 20px;
+margin-bottom:40px;
+}
+
+/* iconos */
+
+.estados {
+position: relative;
+}
+
+.ms-vb2 {
+width: 500px;
+margin-left: 50px;
+}
+
+.icon {
+position: absolute;
+left: -1px;
+height: 10px;
+}
+

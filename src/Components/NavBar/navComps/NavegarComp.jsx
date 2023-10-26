@@ -1,7 +1,6 @@
 import { useState } from "react";
 import RibbonSettingsDropdown from "./RibbonSettingsDropdown";
-import "./ribbonDropdown.css";
-import "./Ribbon.css";
+import "../NavBar.css";
 
 export default function NavegarComp({ currentSite, usuario }) {
   const [isOpen, setIsOpen] = useState(false);

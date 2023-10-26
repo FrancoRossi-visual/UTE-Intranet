@@ -1,4 +1,4 @@
-import "./ribbonDropdown.css";
+import "../NavBar.css";
 
 export default function PaginaComp() {
   return (

@@ -1,4 +1,4 @@
-import "./Ribbon.css";
+import "../NavBar.css";
 
 const ribbonModalOff = {
   position: "fixed",

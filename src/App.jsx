@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import SideNavBar from "./Components/NavBar/navComps/SideNavBar";
 import Breadcrumb from "./Components/NavBar/Breadcrumb";
 import SearchBar from "./Components/NavBar/SearchBar";
+import DesarrolloDeCursos from "./Components/pages/DesarrolloDeCursos/DesarrolloDeCursos";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("Desarrollo de cursos");
@@ -37,15 +38,22 @@ function App() {
       />
       <div id="main">
         <SideNavBar currentSite={currentSite} />
-        <div id="breadcrumb-search">
-          <Breadcrumb />
-          <SearchBar />
+        <div id="page">
+          <div id="breadcrumb-search">
+            <Breadcrumb />
+            <SearchBar />
+          </div>
+          <PageContent>
+            {currentPage === "Desarrollo de cursos" && <DesarrolloDeCursos />}
+          </PageContent>
         </div>
-        <PageContent />
       </div>
     </>
   );
 }
 
-function PageContent() {}
+function PageContent({ children }) {
+  return <div id="page-content">{children}</div>;
+}
+
 export default App;

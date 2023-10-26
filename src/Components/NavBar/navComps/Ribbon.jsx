@@ -1,6 +1,6 @@
 import { useState } from "react";
 import RibbonSettingsDropdown from "./RibbonSettingsDropdown";
-import "./Ribbon.css";
+import "../NavBar.css";
 
 const gearIcon = (
   <svg
