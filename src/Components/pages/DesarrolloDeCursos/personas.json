@@ -1,0 +1,25 @@
+{
+  "gerencial" : [
+    "Bonini Alvarez, Emiliano Pablo",
+    "Monteverde Grassi, Maria Cecilia",
+    "Toledo Bidart, Jessica Daiana",
+    "Bitancourt Ribeiro, Andrea Yisel",
+    "Borges Blanco, Caterina",
+    "Rossi Vazquez, Franco"
+  ],
+  "tecnica" : ["Romero, Sandra Mara"],
+  "administrativa" : ["Gonzalez Abalos, Veronica"],
+  "liderazgo" : ["Monteverde Grassi, Pablo Javier", "Rossi Vazquez, Franco"],
+  "tecnicosDesarrollo" : {
+    "admin1": ["Cano Leites, Dayana Mikaela", "Rossi Vazquez, Franco"],
+    "admin2": ["Gonzalez Taño, Ivana Yoselin", "Rossi Vazquez, Franco"],
+    "admin3": ["Carbonell de Marco, Luis Dario", "Robert Rivoir, Mariela"]
+  },
+  "jefeDesarrollo" : [
+    "Rossi Vazquez, Franco",
+    "Gonzalez Taño, Ivana Yoselin",
+    "Cano Leites, Dayana Mikaela",
+    "Guillermo, Silvia",
+    "Pioli Martinez, Maytee"
+  ]
+}
